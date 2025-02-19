@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Metadata & links -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <!-- CSS -->
+    <style>
+        h1 {
+            color: #0B4B54;
+        }
+
+        .flex-container {
+            display: flex;
+            border: 2px solid #D3E4E7;
+        }
+
+        .flex-container-2 {
+            display: flex;
+            border: 2px solid #D3E4E7;
+            height: 200px;
+        }
+
+        .element-1 {
+            background-color: #032A33;
+        }
+
+        .element-2 {
+            background-color: #0B4B54;
+        }
+
+        .element-3 {
+            background-color: #24777C;
+        }
+
+        .element-4 {
+            background-color: #82ACAB;
+        }
+
+        .element-5 {
+            background-color: #D3E4E7;
+        }
+
+        .element-6 {
+            background-color: #F4BA6E;
+        }
+
+        .element-7 {
+            background-color: #EE9C09;
+        }
+
+        .element-8 {
+            background-color: #AB5F1D;
+        }
+
+        .element-9 {
+            background-color: #683B1B;
+        }
+
+        /* row */
+        .flex-row {
+            flex-direction: row;
+        }
+
+        /* row-reverse */
+        .flex-row-reverse {
+            flex-direction: row-reverse;
+        }
+
+        /* column */
+        .flex-column {
+            flex-direction: column;
+        }
+
+        /* column-reverse */
+        .flex-column-reverse {
+            flex-direction: column-reverse;
+        }
+
+        /* justify-content: baseline */
+        .justify-content-baseline {
+            justify-content: baseline;
+        }
+
+        /* justify-content: center */
+        .justify-content-center {
+            justify-content: center;
+        }
+
+        /* justify-content: end */
+        .justify-content-end {
+            justify-content: end;
+        }
+
+        /* justify-content: first baseline */
+        .justify-content-first-baseline {
+            justify-content: first baseline;
+        }
+
+        /* justify-content: flex-end */
+        .justify-content-flex-end {
+            justify-content: flex-end;
+        }
+
+        /* justify-content: flex-start */
+        .justify-content-flex-start {
+            justify-content: flex-start;
+        }
+
+        /* justify-content: last baseline */
+        .justify-content-last-baseline {
+            justify-content: last baseline;
+        }
+
+        /* justify-content: left */
+        .justify-content-left {
+            justify-content: left;
+        }
+
+        /* justify-content: right */
+        .justify-content-right {
+            justify-content: right;
+        }
+
+        /* justify-content: safe */
+        .justify-content-safe {
+            justify-content: safe;
+        }
+
+        /* justify-content: space-around */
+        .justify-content-space-around {
+            justify-content: space-around;
+        }
+
+        /* justify-content: space-between */
+        .justify-content-space-between {
+            justify-content: space-between;
+        }
+
+        /* justify-content: space-evenly */
+        .justify-content-space-evenly {
+            justify-content: space-evenly;
+        }
+
+        /* justify-content: start */
+        .justify-content-start {
+            justify-content: start;
+        }
+
+        /* justify-content: stretch*/
+        .justify-content-stretch {
+            justify-content: stretch;
+        }
+
+        /* justify-content: unsafe*/
+        .justify-content-unsafe {
+            justify-content: unsafe;
+        }
+
+        /* justify-content: inherit*/
+        .justify-content-inherit {
+            justify-content: inherit;
+        }
+
+        /* justify-content: initial*/
+        .justify-content-initial {
+            justify-content: initial;
+        }
+
+        /* justify-content: unset*/
+        .justify-content-unset {
+            justify-content: unset;
+        }
+
+        /* align-items: baseline */
+        .align-items-baseline {
+            align-items: baseline;
+        }
+
+        /* align-items: center */
+        .align-items-center {
+            align-items: center;
+        }
+
+        /* align-items: end */
+        .align-items-end {
+            align-items: end;
+        }
+
+        /* align-items: first baseline */
+        .align-items-first-baseline {
+            align-items: first baseline;
+        }
+
+        /* align-items: flex-end */
+        .align-items-flex-end {
+            align-items: flex-end;
+        }
+
+        /* align-items: flex-start */
+        .align-items-flex-start {
+            align-items: flex-start;
+        }
+
+        /* align-items: last baseline */
+        .align-items-last-baseline {
+            align-items: last baseline;
+        }
+
+        /* align-items: normal */
+        .align-items-normal {
+            align-items: normal;
+        }
+
+        /* align-items: safe */
+        .align-items-safe {
+            align-items: safe;
+        }
+
+        /* align-items: self-end */
+        .align-items-self-end {
+            align-items: self-end;
+        }
+
+        /* align-items: self-start */
+        .align-items-self-start {
+            align-items: self-start;
+        }
+
+        /* align-items: start */
+        .align-items-start {
+            align-items: start;
+        }
+
+        /* align-items: stretch */
+        .align-items-stretch {
+            align-items: stretch;
+        }
+
+        /* align-items: unsafe */
+        .align-items-unsafe {
+            align-items: unsafe;
+        }
+
+        /* align-items: inherit */
+        .align-items-inherit {
+            align-items: inherit;
+        }
+
+        /* align-items: initial */
+        .align-items-initial {
+            align-items: initial;
+        }
+
+        /* align-items: unset */
+        .align-items-unset {
+            align-items: unset;
+        }
+
+        /* todas las combinaciones */
+        /* flex wrap */
+    </style>
+</head>
+<!-- HTML Elements -->
+<body>
+    
+    <!-- flex container -->
+    <h1>flex container: default</h1>
+    <div class="flex-container">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container row -->
+    <h1>flex container: row</h1>
+    <div class="flex-container flex-row">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+    
+    <!-- flex container row-reverse -->
+    <h1>flex container: row-reverse</h1>
+    <div class="flex-container flex-row-reverse">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container column -->
+    <h1>flex container: column</h1>
+    <div class="flex-container flex-column">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container row-reverse -->
+    <h1>flex container: column-reverse</h1>
+    <div class="flex-container flex-column-reverse">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + justify-content: baseline -->
+    <h1>flex container: default + justify-content: baseline</h1>
+    <div class="flex-container-2 justify-content-baseline">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + justify-content: center -->
+    <h1>flex container: default + justify-content: center</h1>
+    <div class="flex-container-2 justify-content-center">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + justify-content: end -->
+    <h1>flex container: default + justify-content: end</h1>
+    <div class="flex-container-2 justify-content-end">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + justify-content: first baseline -->
+    <h1>flex container: default + justify-content: first baseline</h1>
+    <div class="flex-container-2 justify-content-first-baseline">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + justify-content: flex-end -->
+    <h1>flex container: default + justify-content: flex-end</h1>
+    <div class="flex-container-2 justify-content-flex-end">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + justify-content: flex-start -->
+    <h1>flex container: default + justify-content: flex-start</h1>
+    <div class="flex-container-2 justify-content-flex-start">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + justify-content: last baseline -->
+    <h1>flex container: default + justify-content: last baseline</h1>
+    <div class="flex-container-2 justify-content-last-baseline">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + justify-content: left -->
+    <h1>flex container: default + justify-content: left</h1>
+    <div class="flex-container-2 justify-content-left">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + justify-content: right -->
+    <h1>flex container: default + justify-content: right</h1>
+    <div class="flex-container-2 justify-content-right">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + justify-content: safe -->
+    <h1>flex container: default + justify-content: safe</h1>
+    <div class="flex-container-2 justify-content-safe">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + justify-content: space-around -->
+    <h1>flex container: default + justify-content: space-around</h1>
+    <div class="flex-container-2 justify-content-space-around">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + justify-content: space-between -->
+    <h1>flex container: default + justify-content: space-between</h1>
+    <div class="flex-container-2 justify-content-space-between">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + justify-content: space-evenly -->
+    <h1>flex container: default + justify-content: space-evenly</h1>
+    <div class="flex-container-2 justify-content-space-evenly">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + justify-content: start -->
+    <h1>flex container: default + justify-content: start</h1>
+    <div class="flex-container-2 justify-content-start">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + justify-content: stretch -->
+    <h1>flex container: default + justify-content: stretch</h1>
+    <div class="flex-container-2 justify-content-stretch">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + justify-content: unsafe -->
+    <h1>flex container: default + justify-content: unsafe</h1>
+    <div class="flex-container-2 justify-content-unsafe">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + justify-content: inherit -->
+    <h1>flex container: default + justify-content: inherit</h1>
+    <div class="flex-container-2 justify-content-inherit">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + justify-content: initial -->
+    <h1>flex container: default + justify-content: initial</h1>
+    <div class="flex-container-2 justify-content-initial">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + justify-content: unset -->
+    <h1>flex container: default + justify-content: unset</h1>
+    <div class="flex-container-2 justify-content-unset">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + align-items: baseline -->
+    <h1>flex container: default + align-items: baseline</h1>
+    <div class="flex-container-2 align-items-baseline">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + align-items: center -->
+    <h1>flex container: default + align-items: center</h1>
+    <div class="flex-container-2 align-items-center">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + align-items: end -->
+    <h1>flex container: default + align-items: end</h1>
+    <div class="flex-container-2 align-items-end">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + align-items: first baseline -->
+    <h1>flex container: default + align-items: first baseline</h1>
+    <div class="flex-container-2 align-items-first-baseline">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + align-items: flex-end -->
+    <h1>flex container: default + align-items: flex-end</h1>
+    <div class="flex-container-2 align-items-flex-end">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + align-items: flex-start -->
+    <h1>flex container: default + align-items: flex-start</h1>
+    <div class="flex-container-2 align-items-flex-start">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + align-items: last baseline -->
+    <h1>flex container: default + align-items: last baseline</h1>
+    <div class="flex-container-2 align-items-last-baseline">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + align-items: normal -->
+    <h1>flex container: default + align-items: normal</h1>
+    <div class="flex-container-2 align-items-normal">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + align-items: safe -->
+    <h1>flex container: default + align-items: safe</h1>
+    <div class="flex-container-2 align-items-safe">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + align-items: self-end -->
+    <h1>flex container: default + align-items: self-end</h1>
+    <div class="flex-container-2 align-items-self-end">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + align-items: self-start -->
+    <h1>flex container: default + align-items: self-start</h1>
+    <div class="flex-container-2 align-items-self-start">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + align-items: start -->
+    <h1>flex container: default + align-items: start</h1>
+    <div class="flex-container-2 align-items-start">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + align-items: stretch -->
+    <h1>flex container: default + align-items: stretch</h1>
+    <div class="flex-container-2 align-items-stretch">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + align-items: unsafe -->
+    <h1>flex container: default + align-items: unsafe</h1>
+    <div class="flex-container-2 align-items-unsafe">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + align-items: inherit -->
+    <h1>flex container: default + align-items: inherit</h1>
+    <div class="flex-container-2 align-items-inherit">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + align-items: initial -->
+    <h1>flex container: default + align-items: initial</h1>
+    <div class="flex-container-2 align-items-initial">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + align-items: unset -->
+    <h1>flex container: default + align-items: unset</h1>
+    <div class="flex-container-2 align-items-unset">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + justify-content: center + align-items: center -->
+    <h1>flex container: default + justify-content: center + align-items: center</h1>
+    <div class="flex-container-2 justify-content-center align-items-center">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + justify-content: space-around + align-items: center -->
+    <h1>flex container: default + justify-content: space-around + align-items: center</h1>
+    <div class="flex-container-2 justify-content-space-around align-items-center">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + justify-content: space-around + align-items: center -->
+    <h1>flex container: default + justify-content: space-around + align-items: center</h1>
+    <div class="flex-container-2 justify-content-space-around align-items-center">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + justify-content: space-between + align-items: center -->
+    <h1>flex container: default + justify-content: space-between + align-items: center</h1>
+    <div class="flex-container-2 justify-content-space-between align-items-center">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- flex container + justify-content: space-evenly + align-items: center -->
+    <h1>flex container: default + justify-content: space-evenly + align-items: center</h1>
+    <div class="flex-container-2 justify-content-space-evenly align-items-center">
+        <div class="element-1">element-1</div>
+        <div class="element-2">element-2</div>
+        <div class="element-3">element-3</div>
+        <div class="element-4">element-4</div>
+        <div class="element-5">element-5</div>
+        <div class="element-6">element-6</div>
+        <div class="element-7">element-7</div>
+        <div class="element-8">element-8</div>
+        <div class="element-9">element-9</div>
+    </div>
+
+    <!-- Hacer todas las combinaciones usando JavaScript -->
+    <!-- Firma personal -->
+    <p>{"🌿🖥️"};</p>
+ 
+</body>
+</html>
