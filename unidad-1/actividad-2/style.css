@@ -238,7 +238,9 @@ footer {
     justify-content: center;
     align-items: center;
     /* padding: 15px; */
-    border: 2px solid #ccc;
+    /* border: 2px solid #ccc; */
+    background-color: #032A33;
+    border-top: 2px solid #24777C;
 }
 
 footer > div {
@@ -247,7 +249,7 @@ footer > div {
     justify-content: space-around;
     /* align-items: center; */
     width: 100%;
-    border: 2px solid #ccc;
+    /* border: 2px solid #ccc; */
 }
 
 footer .footer-info {
@@ -255,7 +257,7 @@ footer .footer-info {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    border: 2px solid #ccc;
+    /* border: 2px solid #ccc; */
     width: 100%;
 }
 
@@ -263,15 +265,19 @@ footer .footer-text {
     display: flex;
     flex-direction: column;
     width: 250px;
-    border: 2px solid #ccc;
+    /* border: 2px solid #ccc; */
     padding: 15px;
 }
 
 footer .footer-text h2 {
+    color: aliceblue;
     text-align: center;
+    text-decoration: underline;
+    margin-bottom: 10px;
 }
 
 footer .footer-text p {
+    color: wheat;
     text-align: center;
 }
 
@@ -279,15 +285,19 @@ footer .footer-links {
     display: flex;
     flex-direction: column;
     width: 250px;
-    border: 2px solid #ccc;
+    /* border: 2px solid #ccc; */
     padding: 15px;
 }
 
 footer .footer-links h2 {
+    color: aliceblue;
     text-align: center;
+    text-decoration: underline;
+    margin-bottom: 10px;
 }
 
 footer .footer-links p {
+    color: wheat;
     text-align: center;
 }
 
@@ -304,24 +314,48 @@ footer .footer-links li {
     margin: 5px;
 }
 
+footer .footer-links a {
+    text-decoration: none;
+    color: wheat;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
+    color: #e4cea7;
+}
+
 footer .footer-copy {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 2px solid #ccc;
+    /* border: 2px solid #ccc; */
+    border-top: 2px solid #0B4B54;
+    padding: 10px;
 }
 
 footer .footer-copy p {
-    border: 2px solid #ccc;
+    color: aliceblue;
+    /* border: 2px solid #ccc; */
 }
 
 footer .footer-developer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 2px solid #ccc;
+    border-top: 2px solid #0B4B54;
+    padding: 10px;
+    /* border: 2px solid #ccc; */
 }
 
 footer .footer-developer p {
-    border: 2px solid #ccc;
+    color: aliceblue;
+    /* border: 2px solid #ccc; */
+}
+
+footer .footer-developer a {
+    color: aliceblue;
+}
+
+footer .footer-developer a:hover {
+    color: wheat;
 }
