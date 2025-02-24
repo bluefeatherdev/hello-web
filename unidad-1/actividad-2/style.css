@@ -324,6 +324,17 @@ footer .footer-links a:hover {
     color: #e4cea7;
 }
 
+footer .footer-links .social-media {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+footer .footer-links .social-media li {
+    padding: 5px;
+}
+
 footer .footer-copy {
     display: flex;
     flex-direction: row;
