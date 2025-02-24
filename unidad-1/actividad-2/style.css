@@ -1,0 +1,327 @@
+/* Mi hoja de estilos CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #0B4B54;
+}
+
+/* Sección encabezado */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h2 {
+    color: aliceblue;
+    padding: 15px 0;
+    /* border: 2px solid #ccc; */
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* border: 2px solid #ccc; */
+}
+
+header ul li {
+    list-style: none;
+    margin: 10px;
+    padding: 5px 10px;
+    border: 2px solid wheat;
+    border-radius: 10px;
+    background-color: wheat;
+    cursor: pointer;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #0B4B54;
+    cursor: pointer;
+}
+
+header ul li:hover {
+    background-color: #e4cea7;
+    border-color: #e4cea7;
+}
+
+header ul li:hover a, header ul li a:hover {
+    color: #24777C;
+    text-decoration: underline;
+}
+
+/* Sección de portada */
+.portada img {
+    width: 100%;
+}
+
+/* Sección de texto */
+.texto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    /* border: 2px solid #ccc; */
+    /* box-shadow: inset 0 0 10px #032A33;   */
+    /* background-color: #032A33; */
+}
+
+.texto div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    background-color: #0B4B54;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #24777C;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.texto div h2 {
+    color: wheat;
+    border-bottom: 2px solid wheat;
+    margin-bottom: 5px;
+}
+
+.texto div p {
+    color: aliceblue;
+    font-size: 18px;
+    text-align: center;
+}
+
+.texto div:nth-child(even) h2 {
+    color: aliceblue;
+    border-bottom: 2px solid aliceblue;
+}
+
+.texto div:nth-child(even) p {
+    color: wheat;
+}
+
+/* Sección de tarjetas */
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background-color: #0B4B54; */
+    /* border: 2px solid #ccc; */
+    padding-top: 15px;
+}
+
+.card {
+    width: 200px;
+    /* max-height: 400px; */
+    padding: 4px;
+    border: 2px solid #24777C;
+    border-radius: 10px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card img {
+    height: 123px;
+    max-width: 100%;
+    border-radius: 5px;
+    border: 1px solid #24777C;
+    object-fit: cover;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: wheat;
+    /* text-decoration: underline; */
+    padding: 15px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    /* text-align: justify; */
+}
+
+.card-body p {
+    text-align: center;
+    padding: 0 15px;
+    color: aliceblue;
+}
+
+.card-body button {
+    width: 100px;
+    height: 40px;
+    margin: 10px auto;
+    border-radius: 10px;
+    background-color: wheat;
+    color: #0B4B54;
+    border: 2px solid wheat;
+}
+
+.card-body button:hover {
+    background-color: #e4cea7;
+    border-color: #e4cea7;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Sección del formulario */
+.formulario form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    /* border: 2px solid #ccc; */
+}
+
+.formulario form > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid #24777C;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 15px;
+}
+
+.formulario form > div div {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid #ccc; */
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.formulario form div img {
+    height: 123px;
+    max-width: 100%;
+    border-radius: 5px;
+    border: 1px solid #24777C;
+    object-fit: cover;
+}
+
+.formulario form label {
+    color: wheat;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 15px; */
+    border: 2px solid #ccc;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: center; */
+    width: 100%;
+    border: 2px solid #ccc;
+}
+
+footer .footer-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 2px solid #ccc;
+    width: 100%;
+}
+
+footer .footer-text {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border: 2px solid #ccc;
+    padding: 15px;
+}
+
+footer .footer-text h2 {
+    text-align: center;
+}
+
+footer .footer-text p {
+    text-align: center;
+}
+
+footer .footer-links {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border: 2px solid #ccc;
+    padding: 15px;
+}
+
+footer .footer-links h2 {
+    text-align: center;
+}
+
+footer .footer-links p {
+    text-align: center;
+}
+
+footer .footer-links ul {
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-links li {
+    list-style: none;
+    margin: 5px;
+}
+
+footer .footer-copy {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 2px solid #ccc;
+}
+
+footer .footer-copy p {
+    border: 2px solid #ccc;
+}
+
+footer .footer-developer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 2px solid #ccc;
+}
+
+footer .footer-developer p {
+    border: 2px solid #ccc;
+}
