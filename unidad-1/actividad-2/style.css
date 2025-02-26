@@ -65,6 +65,16 @@ header ul li:hover a, header ul li a:hover {
     width: 100%;
 }
 
+.portada p {
+    position: relative;
+    bottom: 100px;
+    text-align: center;
+    font-size: 35px;
+    color: aliceblue;
+    text-shadow: #032A33 2px 2px 2px;
+    font-weight: bold;
+}
+
 /* Sección de texto */
 .texto {
     display: flex;
