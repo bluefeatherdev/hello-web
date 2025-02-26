@@ -235,6 +235,33 @@ header ul li:hover a, header ul li a:hover {
     font-size: 17px;
 }
 
+.formulario .form-buttons {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.formulario .form-buttons button {
+    width: 100px;
+    height: 40px;
+    margin: 10px auto;
+    border-radius: 10px;
+    background-color: wheat;
+    color: #0B4B54;
+    border: 2px solid wheat;
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 0;
+}
+
+.formulario .form-buttons button:hover {
+    background-color: #e4cea7;
+    border-color: #e4cea7;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 /* Footer */
 footer {
     display: flex;
