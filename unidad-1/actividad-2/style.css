@@ -140,7 +140,7 @@ header ul li:hover a, header ul li a:hover {
 }
 
 .card img {
-    height: 123px;
+    height: 150px;
     max-width: 100%;
     border-radius: 5px;
     border: 1px solid #24777C;
@@ -364,9 +364,9 @@ footer .footer-developer p {
 }
 
 footer .footer-developer a {
-    color: aliceblue;
+    color: wheat;
 }
 
 footer .footer-developer a:hover {
-    color: wheat;
+    color: #e4cea7;
 }
