@@ -1,0 +1,10 @@
+/* Mi hoja de estilos CSS */
+body {
+    /* background-color: teal; */
+    background: url(demo014.jpg);
+}
+
+p {
+    font-size: 40px;
+    color: wheat;
+}

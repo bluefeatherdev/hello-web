@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Metadata & links -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@media query | CSS | Unidad 1</title>
+    <!-- CSS -->
+    <style>
+        .card-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .card {
+            width: 200px;
+            padding: 4px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .card img {
+            height: 150px;
+            max-width: 100%;
+            border-radius: 5px;
+            border: 1px solid #24777C;
+            object-fit: cover;
+        }
+
+        @media screen and (max-width: 600px) {
+            .card-container {
+                flex-direction: column;
+            }
+
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<!-- HTML Elements -->
+<body>
+    
+    <h2>Ejemplo de @media query CSS</h2>
+
+    <!-- Sección de tarjetas  -->
+    <section>
+        <div class="card-container">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="img/logo_cuc.png">
+                <div class="card-header">
+                    <div class="card-title">
+                        Some Text
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero id nihil reiciendis sed, tenetur aut soluta dolore quasi, error assumenda et accusantium nesciunt culpa eos alias! Fugiat tempore esse hic.</p>
+                    <button>Click me!</button>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="img/logo_cuc.png" alt="Logo CUC">
+                <div class="card-header">
+                    <div class="card-title">
+                        Some Text
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero id nihil reiciendis sed, tenetur aut soluta dolore quasi, error assumenda et accusantium nesciunt culpa eos alias! Fugiat tempore esse hic.</p>
+                    <button>Click me!</button>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="img/logo_cuc.png" alt="Logo CUC">
+                <div class="card-header">
+                    <div class="card-title">
+                        Some Text
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero id nihil reiciendis sed, tenetur aut soluta dolore quasi, error assumenda et accusantium nesciunt culpa eos alias! Fugiat tempore esse hic.</p>
+                    <button>Click me!</button>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="card">
+                <img src="img/logo_cuc.png" alt="Logo CUC">
+                <div class="card-header">
+                    <div class="card-title">
+                        Some Text
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero id nihil reiciendis sed, tenetur aut soluta dolore quasi, error assumenda et accusantium nesciunt culpa eos alias! Fugiat tempore esse hic.</p>
+                    <button>Click me!</button>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="card">
+                <img src="img/logo_cuc.png" alt="Logo CUC">
+                <div class="card-header">
+                    <div class="card-title">
+                        Some Text
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero id nihil reiciendis sed, tenetur aut soluta dolore quasi, error assumenda et accusantium nesciunt culpa eos alias! Fugiat tempore esse hic.</p>
+                    <button>Click me!</button>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="card">
+                <img src="img/logo_cuc.png" alt="Logo CUC">
+                <div class="card-header">
+                    <div class="card-title">
+                        Some Text
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero id nihil reiciendis sed, tenetur aut soluta dolore quasi, error assumenda et accusantium nesciunt culpa eos alias! Fugiat tempore esse hic.</p>
+                    <button>Click me!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Firma personal -->
+    <p>{"🌿🖥️"};</p>
+ 
+</body>
+</html>
