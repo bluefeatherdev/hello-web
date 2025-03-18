@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Metadata & links -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas con grid | CSS | Unidad 1</title>
+    <!-- CSS -->
+    <style>
+        body {
+            background-color: teal;
+        }
+
+        h1 {
+            color: wheat;
+        }
+
+        p {
+            color: white;
+            font-size: 20px;
+        }
+        
+        .grid-px {
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+            background-color: #0B4B54;
+            border: 2px solid #032A33;
+            border-radius: 5px;
+        }
+
+        .grid-fr {
+            display: grid;
+            width: 300px;
+            height: 300px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr; 
+            background-color: #0B4B54;
+            border: 2px solid #032A33;
+            border-radius: 5px;        
+        }
+
+        .grid-repeat {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(3, 100px); 
+            background-color: #0B4B54;
+            border: 2px solid #032A33;
+            border-radius: 5px;        
+        }
+
+        .grid-minmax {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(50px, 100px));
+            grid-template-rows: repeat(3, minmax(50px, 100px)); 
+            background-color: #0B4B54;
+            border: 2px solid #032A33;
+            border-radius: 5px;        
+        }
+
+        .inline-grid-px {
+            display: inline-grid;
+            display: -ms-inline-grid;
+            display: -moz-inline-grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+            background-color: #0B4B54;
+            border: 2px solid #032A33;
+            border-radius: 5px;
+        }
+
+        .inline-grid-fr {
+            display: inline-grid;
+            display: -ms-inline-grid;
+            display: -moz-inline-grid;
+            width: 300px;
+            height: 300px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr; 
+            background-color: #0B4B54;
+            border: 2px solid #032A33;
+            border-radius: 5px;        
+        }
+
+        .inline-grid-repeat {
+            display: inline-grid;
+            display: -ms-inline-grid;
+            display: -moz-inline-grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(3, 100px); 
+            background-color: #0B4B54;
+            border: 2px solid #032A33;
+            border-radius: 5px;        
+        }
+
+        .inline-grid-minmax {
+            display: inline-grid;
+            display: -ms-inline-grid;
+            display: -moz-inline-grid;
+            grid-template-columns: repeat(3, minmax(50px, 100px));
+            grid-template-rows: repeat(3, minmax(50px, 100px)); 
+            background-color: #0B4B54;
+            border: 2px solid #032A33;
+            border-radius: 5px;        
+        }
+
+        .grid-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            color: #032A33;
+            border: 1px solid #ddd;
+            font-size: 23px;
+            cursor: pointer;
+        }
+
+        .grid-item:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<!-- HTML Elements -->
+<body>
+
+    <!-- Ejemplo: Pruebas con grid -->
+    <h1>display: grid; + grid-template-...: px;</h1>
+    <div class="grid-px">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+    
+    <h1>display: grid; + grid-template-...: fr;</h1>
+    <div class="grid-fr">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+
+    <h1>display: grid; + grid-template-...: repeat(...);</h1>
+    <div class="grid-repeat">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+
+    <h1>display: grid; + grid-template-...: minmax(...);</h1>
+    <div class="grid-minmax">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+
+    <h1>display: inline-grid; + grid-template-...: px;</h1>
+    <div class="inline-grid-px">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+
+    <h1>display: inline-grid; + grid-template-...: fr;</h1>
+    <div class="inline-grid-fr">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+
+    <h1>display: inline-grid; + grid-template-...: repeat(...);</h1>
+    <div class="inline-grid-repeat">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+
+    <h1>display: inline-grid; + grid-template-...: minmax(...);</h1>
+    <div class="inline-grid-minmax">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+    
+
+    <!-- Firma personal -->
+    <p>{"🌿🖥️"};</p>
+ 
+</body>
+</html>
