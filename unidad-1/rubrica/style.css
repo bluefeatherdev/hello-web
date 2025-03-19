@@ -58,7 +58,7 @@ header .header-menu {
 
 @media only screen and (max-width: 480px) {
     header {
-        border: 2px solid red;
+        /* border: 2px solid red; */
         width: 100%;
     }
 
