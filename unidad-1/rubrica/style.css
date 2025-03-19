@@ -1,1 +1,312 @@
 /* Mi hoja de estilo CSS */
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #8eadd5;
+}
+
+/* Navegation Bar */
+header {
+    display: flex;
+    flex-direction: row;
+    /* background-color: #ddd; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    /* background-color: #aaa; */
+    margin-left: 123px;
+    color: #272D38;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+header ul {
+    /* background-color: #aaa; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 123px;
+}
+
+header ul li {
+    list-style-type: none;
+    margin: 0 25px;
+    /* border: 1px solid red; */
+}
+
+header ul li a {
+    color: #272D38;
+    text-decoration: none;
+    font-family: 28px;
+    font-weight: 400;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero-section {
+    margin: 40px 123px;
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-section .hero-text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section .hero-text h1 {
+    font-size: 64px;
+    font-weight: 700px;
+    color: #272D38;
+}
+
+.hero-section .hero-text p {
+    font-size: 18px;
+    font-weight: 400px;
+    color: #272D38;
+    margin-top: -20px;
+}
+
+.hero-section .hero-text a {
+    font-size: 16px;
+    font-weight: 600px;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 25px;
+    margin-left: 40px;
+}
+
+.hero-section .hero-text a:hover {
+    text-decoration: underline;
+}
+
+.hero-section .hero-img {
+    width: 40%;
+}
+
+/* Company Section */
+.company-section {
+    margin: 80px 123px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-section p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #CFDCED;
+}
+
+.company-section .company-logos {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Branding Section */
+.branding-section {
+    margin: 0px 123px;
+    display: flex;
+    flex-direction: column;
+}
+
+.branding-section > h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #272D38;
+    text-align: center;
+}
+
+.branding-section .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.branding-section .card-container .card {
+    width: 308px;
+    height: 192px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.branding-section .card-container .card .card-logo {
+    width: 52px;
+    height: 48px;
+    border-radius: 10px;
+    /* background-color: #FFDED4; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.branding-section .card-container .card .card-logo#internetIcon {
+    background-color: #FFDED4;
+}
+
+.branding-section .card-container .card .card-logo#computerIcon {
+    background-color: #FFEED4;
+}
+
+.branding-section .card-container .card .card-logo#smartphoneIcon {
+    background-color: #D4F0FF;
+    padding-top: 7px;
+}
+
+.branding-section .card-container .card .card-title h1 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #331B3B;
+}
+
+.branding-section .card-container .card .card-text {
+    font-size: 15px;
+    font-weight: 300;
+    color: rgba(51, 27, 59, 0.66);
+}
+
+/* Custom Section */
+.custom-section {
+    margin: 100px 123px 0 123px;
+    display: flex;
+    flex-direction: row;
+}
+
+.custom-section .custom-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-section .custom-text h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #272D38;
+}
+
+.custom-section .custom-text p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #272D38;
+}
+
+.custom-section .custom-img {
+    width: 50%;
+}
+
+/* Contact Section */
+.contact-section {
+    margin: 0 169px;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-section .contact-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section .contact-text h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #272D38;
+}
+
+.contact-section .contact-text p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #272D38;
+}
+
+.contact-section .contact-img {
+    width: 50%;
+}
+
+.contact-section .contact-text a {
+    font-size: 16px;
+    font-weight: 600px;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 25px;
+    margin-left: 40px;
+}
+
+.contact-section .contact-text a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Section */
+footer {
+    margin: 0;
+    background-color: #8eadd5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px 0;
+}
+
+footer .footer-links div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #272D38; */
+}
+
+footer .footer-links div h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #272D38;
+}
+
+footer .footer-links div p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #272D38;
+}
+
+footer .footer-links div ul li {
+    list-style-type: none;
+    margin-bottom: 25px;
+}
+
+footer .footer-links div ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+    color: #272D38;
+}
+
+footer .footer-links div ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-copyright {
+    display: none;
+}
+
