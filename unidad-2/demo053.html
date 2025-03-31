@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Metadata & links -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructurar objetos | JavaScript | Unidad 2</title>
+    <!-- CSS -->
+    <style>
+        
+    </style>
+</head>
+<!-- HTML Elements -->
+<body>
+    
+    <h1>Hello World!</h1>
+    <p>Look at the browser's console </p>
+    <p id="demo"></p>
+
+    <!-- JavaScript -->
+    <script>
+        // Crear un objeto
+        const pet = {
+            name: "Tommy",
+            age: 5,
+            type: "Bear",
+            breed: ["Grizzly", "Polar", "Black"]
+        };
+
+        // Mostar el objeto en el HTML + consola
+        document.getElementById("demo").innerHTML = pet;
+        console.log(pet);
+
+        // Destructurar una propiedad
+        const petName = pet.name;
+        console.log(petName);
+
+        // Destructurar varias propiedades
+        const {name, age, type, breed} = pet;
+        console.log(name);
+        console.log(age);
+        console.log(type);
+        console.log(breed[0]);
+    </script>
+
+    <!-- Firma personal -->
+    <p>{"🌿🖥️"};</p>
+
+</body>
+</html>

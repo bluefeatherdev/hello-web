@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Metadata & links -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo objetos con URLs | JavaScript | Unidad 2</title>
+    <!-- CSS -->
+    <style>
+        
+    </style>
+</head>
+<!-- HTML Elements -->
+<body>
+    
+    <h1>Hello World!</h1>
+    <p>Look at the browser's console </p>
+
+    <!-- JavaScript -->
+    <script>
+        // Crear un objeto
+        const web = {
+            name: "cuc",
+            links: {
+                main: "www.cuc.edu.co"
+            },
+            socialMedia: {
+                youtube: {
+                    link: "youtube.com/cuc",
+                    name: "CUC Youtube"
+                },
+                facebook: {
+                    link: "facebook.com/cuc",
+                    name: "CUC Facebook"
+                }
+            }
+        }
+
+        // Acceder a los valores del objeto
+        const youtubeLink = web.socialMedia.youtube.link;
+        console.log(youtubeLink);
+
+        // Destructurar el objeto
+        const {youtube, facebook} = web.socialMedia;
+        console.log(youtube.link, youtube.name);
+        console.log(facebook.link, facebook.name);
+    </script>
+
+    <!-- Firma personal -->
+    <p>{"🌿🖥️"};</p>
+
+</body>
+</html>
