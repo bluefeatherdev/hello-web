@@ -25,33 +25,33 @@
         <div class="cal">
             <!-- Texto calculadora -->
             <div class="cal-text">
-                <p>123</p>
+                <p id="calText">0</p>
             </div>
             <!-- Botonoes calculadora -->
             <div class="cal-buttons">
                 <div class="button-row">
-                    <button type="button">1</button>
-                    <button type="button">2</button>
-                    <button type="button">3</button>
-                    <button type="button">/</button>
+                    <button type="button" onclick="calWrite('1')">1</button>
+                    <button type="button" onclick="calWrite('2')">2</button>
+                    <button type="button" onclick="calWrite('3')">3</button>
+                    <button type="button" onclick="calWrite('/')">/</button>
                 </div>
                 <div class="button-row">
-                    <button type="button">4</button>
-                    <button type="button">5</button>
-                    <button type="button">6</button>
-                    <button type="button">x</button>
+                    <button type="button" onclick="calWrite('4')">4</button>
+                    <button type="button" onclick="calWrite('5')">5</button>
+                    <button type="button" onclick="calWrite('6')">6</button>
+                    <button type="button" onclick="calWrite('*')">x</button>
                 </div>
                 <div class="button-row">
-                    <button type="button">7</button>
-                    <button type="button">8</button>
-                    <button type="button">9</button>
-                    <button type="button">-</button>
+                    <button type="button" onclick="calWrite('7')">7</button>
+                    <button type="button" onclick="calWrite('8')">8</button>
+                    <button type="button" onclick="calWrite('9')">9</button>
+                    <button type="button" onclick="calWrite('-')">-</button>
                 </div>
                 <div class="button-row">
-                    <button type="button">0</button>
-                    <button type="button">.</button>
-                    <button type="button">=</button>
-                    <button type="button">+</button>
+                    <button type="button" onclick="calWrite('0')">0</button>
+                    <button type="button" onclick="calWrite('.')">.</button>
+                    <button type="button" onclick="calWrite('=')">=</button>
+                    <button type="button" onclick="calWrite('+')">+</button>
                 </div>
             </div>
         </div>
