@@ -28,8 +28,8 @@
             <!-- Botonoes calculadora -->
             <div class="cal-buttons">
                 <div class="button-row">
-                    <button type="button" class="clear">C</button>
-                    <button type="button" class="back">⌫</button>
+                    <button type="button" class="clear" onclick="calClear()">C</button>
+                    <button type="button" class="back" onclick="calBack()">⌫</button>
                     <button type="button" onclick="calWrite('.')">.</button>
                     <button type="button" onclick="calWrite('/')">/</button>
                 </div>
@@ -53,7 +53,7 @@
                 </div>
                 <div class="button-row">
                     <button type="button" onclick="calWrite('0')">0</button>
-                    <button type="button" onclick="calWrite('=')" class="equals" style="flex: 2;">=</button>
+                    <button type="button" class="equals" style="flex: 2;" onclick="calWrite('=')">=</button>
                 </div>
             </div>
         </div>
