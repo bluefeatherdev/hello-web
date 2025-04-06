@@ -46,7 +46,7 @@ body {
     box-shadow: inset 5px 5px 10px #c1c1c1,
     inset -5px -5px 10px #ffffff;
     text-align: right;
-    font-size: 1.5em;
+    font-size: 2em;
     min-width: 200px;
     color: #555;
     /* border: 1px solid teal; */
@@ -58,9 +58,9 @@ body {
     margin-top: 35px;
     text-align: right;
     padding: 10px;
-    /* overflow: hidden;
+    overflow: hidden;
     white-space: nowrap;
-    text-overflow: ellipsis; */
+    text-overflow: ellipsis;
 }
 
 /* Botones calculadora */
@@ -99,12 +99,22 @@ body {
 }
 
 .button-row button:nth-child(4) {
-    background: #555555;
+    background: #333;
     color: #fff;
 }
 
-.button-row:nth-child(4) button:nth-child(3) {
-    background-color: teal;
+.button-row button.clear {
+    background: #674720;
+    color: white;
+}
+
+.button-row button.back {
+    background: #99735A;
+    color: white;
+}
+
+.button-row button.equals {
+    background-color: #4E6081;
     color: aliceblue;
 }
 

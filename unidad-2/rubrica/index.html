@@ -28,28 +28,32 @@
             <!-- Botonoes calculadora -->
             <div class="cal-buttons">
                 <div class="button-row">
+                    <button type="button" class="clear">C</button>
+                    <button type="button" class="back">⌫</button>
+                    <button type="button" onclick="calWrite('.')">.</button>
+                    <button type="button" onclick="calWrite('/')">/</button>
+                </div>
+                <div class="button-row">
                     <button type="button" onclick="calWrite('1')">1</button>
                     <button type="button" onclick="calWrite('2')">2</button>
                     <button type="button" onclick="calWrite('3')">3</button>
-                    <button type="button" onclick="calWrite('/')">/</button>
+                    <button type="button" onclick="calWrite('x')">x</button>
                 </div>
                 <div class="button-row">
                     <button type="button" onclick="calWrite('4')">4</button>
                     <button type="button" onclick="calWrite('5')">5</button>
                     <button type="button" onclick="calWrite('6')">6</button>
-                    <button type="button" onclick="calWrite('*')">x</button>
+                    <button type="button" onclick="calWrite('-')">-</button>
                 </div>
                 <div class="button-row">
                     <button type="button" onclick="calWrite('7')">7</button>
                     <button type="button" onclick="calWrite('8')">8</button>
                     <button type="button" onclick="calWrite('9')">9</button>
-                    <button type="button" onclick="calWrite('-')">-</button>
+                    <button type="button" onclick="calWrite('+')">+</button>
                 </div>
                 <div class="button-row">
                     <button type="button" onclick="calWrite('0')">0</button>
-                    <button type="button" onclick="calWrite('.')">.</button>
-                    <button type="button" onclick="calWrite('=')">=</button>
-                    <button type="button" onclick="calWrite('+')">+</button>
+                    <button type="button" onclick="calWrite('=')" class="equals" style="flex: 2;">=</button>
                 </div>
             </div>
         </div>
