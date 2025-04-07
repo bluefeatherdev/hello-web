@@ -25,7 +25,7 @@
             <div class="cal-text">
                 <p id="calText">0</p>
             </div>
-            <!-- Botonoes calculadora -->
+            <!-- Botones calculadora -->
             <div class="cal-buttons">
                 <div class="button-row">
                     <button type="button" class="clear" onclick="calClear()">C</button>
@@ -37,7 +37,7 @@
                     <button type="button" onclick="calWrite('1')">1</button>
                     <button type="button" onclick="calWrite('2')">2</button>
                     <button type="button" onclick="calWrite('3')">3</button>
-                    <button type="button" onclick="calWrite('x')">x</button>
+                    <button type="button" onclick="calWrite('*')">x</button>
                 </div>
                 <div class="button-row">
                     <button type="button" onclick="calWrite('4')">4</button>
@@ -53,7 +53,7 @@
                 </div>
                 <div class="button-row">
                     <button type="button" onclick="calWrite('0')">0</button>
-                    <button type="button" class="equals" style="flex: 2;" onclick="calWrite('=')">=</button>
+                    <button type="button" class="equals" style="flex: 2;" onclick="calEval()">=</button>
                 </div>
             </div>
         </div>
