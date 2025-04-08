@@ -7,9 +7,9 @@ console.log(`calText: ${calText} ${calText.innerText}`);
 // 1. Escribir texto calculadora
 const calWrite = (text) => {
     console.log(`calWrite: ${text} ${typeof text}`)
-    let current = calText.innerText;
-
+    
     // Permitir iniciar con un número negativo (-)
+    let current = calText.innerText;
     if (text === '-' && current === '0') {
         calText.innerText = '-';
         return;
