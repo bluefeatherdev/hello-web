@@ -124,3 +124,25 @@ footer {
     padding: 20px;
     text-align: center;
 }
+
+/* Media Queries para Responsividad */
+/* Pantallas pequeñas */
+@media (max-width: 768px) {
+    .cal {
+        width: 100%;
+        padding: 15px;
+        border-radius: 20px;
+    }
+
+    .cal-text {
+        font-size: 1.5em;
+        padding: 10px 15px;
+    }
+
+    .button-row button {
+        width: 100%;
+        height: 70px;
+        font-size: 1em;
+        padding: 10px;
+    }
+}
