@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Metadata & links -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueve ejemplos intermedios | JavaScript | Unidad 2</title>
+    <!-- CSS -->
+    <style>
+        
+    </style>
+</head>
+<!-- HTML Elements -->
+<body>
+    
+    <h1>Hello World!</h1>
+    <p>Look at the browser's console</p>
+    <p id="clock"></p>
+    <p>{"🌿🖥️"};</p>
+
+    <!-- JavaScript -->
+    <script>
+        // 1. Asíncronía
+        setTimeout(() => {console.log("I'm function 1")}, 5000); // 5 seconds delay
+        setTimeout(function(){saludo(texto)}, 3000); // 3 seconds delay
+        let texto = "I'm function 2";
+        const saludo = (texto) => console.log(texto);
+
+        // 2. setInterval
+        setInterval(clock, 1000);
+        function clock() {
+            let date = new Date;
+            document.getElementById("clock").innerHTML = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+        }
+
+        // 3. Callback
+        const data = [
+            {"id": 1, "firstName": "John", "lastName": "Doe"},
+            {"id": 2, "firstName": "Eliot", "lastName": "Brown"},
+            {"id": 3, "firstName": "Elie", "lastName": "Sweets"}
+        ];
+
+        const findId = (id, callback) => {
+            // the find method
+            const user = data.find(item => item.id === id);
+            if (user) {
+                callback(null, user);
+            } else {
+                callback(`User with id: ${id} not found... (callback)`);
+            }
+        };
+
+        findId(3, (error, user) => {
+            if (error) return console.log(error);
+            console.log("User:", user);
+        });
+
+        // 4. Promise
+        const findIdPromise = (id) => {
+            // the find method
+            const user = data.find(item => item.id === id);
+            return new Promise((resolve, reject) => {
+                user ? resolve(user) : reject(`User with id: ${id} not found... (promise)`);
+            });
+        };
+        findIdPromise(5)
+            .then((user) => console.log("User:", user))
+            .catch((error) => console.log(error));
+
+        // 5. Fetch
+        const url = "https://jsonplaceholder.typicode.com/users";
+        fetch(url)
+            .then(res => res.json())
+            .then(data => console.log(data));
+
+        // 6. Async/Await
+        const findData = async() => {
+            try {
+                const res = await fetch(url);
+                const data = await res.json();
+                data.forEach(element => {
+                    console.log(`${element.id}: ${element.name}`);
+                });
+            } catch (error) {
+                console.log(error);
+            }
+        };
+        findData();
+
+        // 7. Map
+        const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        const square = numbers.map((item) => item * item);
+        console.log("Numbers:", numbers);
+        console.log("Square:", square);
+
+        // 8. Filter
+        const users = [
+            {id: 1, name: "John", age: 40},
+            {id: 2, name: "Eliot", age: 21},
+            {id: 3, name: "Elie", age: 23}
+        ];
+        const olderUsers = users.filter((item) => item.age < 23);
+        console.log("Users:", users);
+        console.log("Older users:", olderUsers);
+
+        // 9. Async/Await with fetch and filter
+        const filterUserId = async(id) => {
+            try {
+                const res = await fetch(url);
+                const data = await res.json();
+                const user = data.filter((item) => item.id === id);
+                console.log("User:", user);
+            } catch (error) {
+                console.log(error);
+            }
+        };
+        filterUserId(5);
+    </script>
+
+</body>
+</html>

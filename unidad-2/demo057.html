@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Metadata & links -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Bootstrap | Bootstrap | Unidad 2</title>
+    <!-- CSS -->
+    <style>
+        
+    </style>
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<!-- HTML Elements -->
+<body>
+    
+    <!-- Bootstrap container -->
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <nav class="navbar navbar-expand-md bg-body-tertiary">
+                <div class="cotainer-fluid">
+                    <!-- Brand -->
+                    <a class="navbar-brand" href="./demo057.html">Brand</a>
+                    <!-- Toogler Icon -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Navbar Items -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./demo057.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Galería</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Instrumentos
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Piano</a></li>
+                                    <li><a class="dropdown-item" href="#">Celesta</a></li>
+                                    <li><a class="dropdown-item" href="#">Clavichord</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Oboe</a></li>
+                                    <li><a class="dropdown-item" href="#">Clarinet</a></li>
+                                    <li><a class="dropdown-item" href="#">Fagot</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" aria-disabled="true">Contactos</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="row">
+            <div class="col-4 col-md-6 col-lg-4 bg-primary">
+                Some text
+            </div>
+            <div class="col-4 d-block d-md-none d-lg-block col-lg-4 bg-success">
+                <img class="img-fluid rounded-circle m-2" src="buho_nival.jpg" alt="Búho nival">
+            </div>
+            <div class="col-4 col-md-6 col-lg-4 bg-warning d-grid gap-2">
+                <button class="btn btn-dark m-2 btn-lg">Click me!</button>
+                <button class="btn btn-outline-dark m-2">Click me!</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6 col-sm-9 col-md-4 col-lg-3 bg-secondary">
+                <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil omnis, ducimus, magni iste non hic quisquam id repellat deleniti eius possimus quas voluptatibus adipisci recusandae neque quidem culpa natus earum.</p>
+            </div>
+            <div class="col-6 col-sm-3 col-md-8 col-lg-9 bg-info">
+                <img class="img-fluid float-end" src="pinguinos.jpg" alt="Pingüinos">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 bg-body-tertiary">
+                <!-- Firma personal -->
+                <p class="text-center">{"🌿🖥️"};</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5.3.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
+
+</body>
+</html>
