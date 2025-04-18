@@ -1,8 +1,9 @@
 // JavaScript
 console.log("Hello World! {'🌿🖥️'};");
 
-// Conexión API con fetch (async/await)
+// Prueba: Conexión API
 const apiConnection = async () => {
+    // Conexión API con fetch (async/await)
     const apiURL = "https://pokeapi.co/api/v2/pokemon/";
     try {
         const response = await fetch(apiURL);
@@ -15,10 +16,11 @@ const apiConnection = async () => {
         console.error(`Error: ${error}`);
     }
 };
-apiConnection();
+// apiConnection();
 
-// Conexión API con fetch (async/await)
+// Prueba: Obtener todos los pokemones
 const fetchAllPokemons = async () => {
+    // Conexión API con fetch (async/await)
     try {
         let results = [];
         let newURL = 'https://pokeapi.co/api/v2/pokemon/?limit=1303';
@@ -31,12 +33,13 @@ const fetchAllPokemons = async () => {
         console.error(`Error: ${error}`);
     }
 };
-fetchAllPokemons();
+// fetchAllPokemons();
 
-// Conexión API con fetch (async/await)
-const getPokemonInfo = async () => {
+// Prueba: Obtener un pokemon específico
+const getPokemonInfo = async (id) => {
+    // Conexión API con fetch (async/await)
     try {
-        let newURL = 'https://pokeapi.co/api/v2/pokemon/1';
+        let newURL = `https://pokeapi.co/api/v2/pokemon/${id}`;
         const response = await fetch(newURL);
         const data = await response.json();
         pokemonId = data.id;
@@ -54,11 +57,12 @@ const getPokemonInfo = async () => {
         console.error(`Error: ${error}`);
     }
 };
-getPokemonInfo();
+// getPokemonInfo(5);
 
-// Mostrar los datos en el HTML
+// Prueba: Mostrar 15 pokemones en HTML con fetch
 let cardContainer = document.getElementById("cardContainer");
-const showDataInHTML = async (id) => {
+const showOnePokemonWithFetch = async (id) => {
+    // Conexión API con fetch (async/await)
     try {
         let newURL = `https://pokeapi.co/api/v2/pokemon/${id}`;
         const response = await fetch(newURL);
@@ -84,13 +88,50 @@ const showDataInHTML = async (id) => {
     }
 };
 
-// Mostrar primeros 15 pokemones
-for (let i = 1; i <= 15; i++) {
-    if (i >= 1026) {
-        console.log(`Pokemon ID: ${i + 8975}`);
-        showDataInHTML(i + 8975);
-    } else {
-        console.log(`Pokemon ID: ${i}`);
-        showDataInHTML(i);
+// Mostrar primeros 15 pokemones (fetch)
+// for (let i = 1; i <= 15; i++) {
+//     if (i >= 1026) {
+//         console.log(`Pokemon ID: ${i + 8975}`);
+//         showOnePokemonWithFetch(i + 8975);
+//     } else {
+//         console.log(`Pokemon ID: ${i}`);
+//         showOnePokemonWithFetch(i);
+//     }
+// }
+
+// Mostrar 15 pokemones en HTML con Promise
+const showPokemonsWithPromise = async () => {
+    // Conexión API con Promise (async/await)
+    try {
+        let promises = [];
+        for (let i = 1; i <= 15; i++) {
+            let id = i >= 1026 ? i + 8975 : i;
+            let newURL = `https://pokeapi.co/api/v2/pokemon/${id}`;
+            promises.push(fetch(newURL).then(response => response.json()));
+        }
+
+        let results = await Promise.all(promises);
+        results.forEach(data => {
+            let pokemonId = data.id;
+            let pokemonName = data.name;
+            let pokemonAbilities = data.abilities;
+            let pokemonSprites = data.sprites;
+
+            cardContainer.innerHTML += `
+                <div class="card">
+                    <h2>${pokemonName}</h2>
+                    <p>ID: ${pokemonId}</p>
+                    <p>Name: ${pokemonName}</p>
+                    <p>Abilities: ${pokemonAbilities.map(ability => ability.ability.name).join(', ')}</p>
+                    <p>Sprites:</p>
+                    <img src="${pokemonSprites.front_default}" alt="${pokemonName}">
+                </div>
+                <hr>
+            `;
+        });
+    } catch (error) {
+        console.error(`Error: ${error}`);
     }
-}
+};
+showPokemonsWithPromise();
+
