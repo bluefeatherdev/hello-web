@@ -21,6 +21,39 @@ header {
     font-size: 1.5rem;
 }
 
+/* Select */
+section {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+label {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+    color: #2a75bb;
+}
+
+select {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #2a75bb;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #2a75bb;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+select:hover {
+    background-color: #e6f0ff;
+}
+
+select:focus {
+    outline: none;
+    border-color: #ffcb05;
+    box-shadow: 0 0 0 3px rgba(255, 203, 5, 0.3);
+}
+
 /* Contenedor tarjeta */
 .card-container {
     display: grid;
@@ -29,6 +62,12 @@ header {
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.card-container.single {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
 }
 
 /* Tarjeta individual */
@@ -60,8 +99,19 @@ header {
 
 /* Footer */
 footer {
+    background-color: #2a75bb;
+    color: #fff;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
     text-align: center;
-    padding: 10px;
+    flex-direction: row;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    line-height: 1.5;
 }
 
 /* Media Queries para Responsividad */
@@ -69,6 +119,10 @@ footer {
 @media (max-width: 768px) {
     .card-container {
         grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
     }
 }
 
