@@ -1,6 +1,3 @@
-// ...
-console.log("Hello World!");
-
 // 1. Construcción servidor HTTP con Express
 const express = require('express');
 const app = express();
@@ -23,12 +20,13 @@ app.listen(portExpress, () => {
 // 3. Rutas y manejo de datos
 app.post('/formulario', (req, res) => {
     // 4. Campos del formulario requeridos
-    // Por hacer: validar de un modo más simple
-    const {id, nombre, apellido, titulo, autor, editorial, año} = req.body;
-    if (!id || !nombre || !apellido || !titulo || !autor || !editorial || !año) return res.redirect('/error.html');
-    console.log(req.body);
+    const requiredFields = ['id', 'nombre', 'apellido', 'titulo', 'autor', 'editorial', 'año'];
+    if (requiredFields.some(field => !req.body[field])) {
+        return res.redirect('/error.html');
+    }
     // 5. Guardar datos en un archivo txt
     // 7. Estructura del archivo txt 
+    const {id, nombre, apellido, titulo, autor, editorial, año} = req.body;
     const text = `${id}, ${nombre}, ${apellido}, ${titulo}, ${autor}, ${editorial}, ${año}`;
     fs.writeFile(`data/id_${id}.txt`, text, (error) => {
         if (error) {
@@ -40,6 +38,10 @@ app.post('/formulario', (req, res) => {
         res.download(`data/id_${id}.txt`);
         // res.send(`¡Archivo txt creado exitosamente! | Datos: ${text}`);
     });
+    // console.log(req.body);
     // console.log(`Datos recibidos del LIBRO: ${titulo} - ${autor} - ${editorial} - ${año}`);
     // res.send(`Datos recibidos: ${id} - ${nombre} - ${apellido} | ${titulo} - ${autor} - ${editorial} - ${año}`);
 })
+
+// 9. Github
+// https://github.com/jesusdominguez2004/desarrollo-web-cuc/tree/main/unidad-3/rubrica
