@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Metadata & links -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 1 | Unidad 2</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- HTML Elements -->
+<body>
+    
+    <!-- Texto de bienvenida -->
+    <div class="welcome">
+        <h1>Calculadora básica</h1>
+        <p>Usando JavaScript</p>
+    </div>
+
+    <!-- Contenedor calculadora -->
+    <div class="cal-container">
+        <!-- Calculadora -->
+        <div class="cal">
+            <!-- Texto calculadora -->
+            <div class="cal-text">
+                <p id="calText">0</p>
+            </div>
+            <!-- Botones calculadora -->
+            <div class="cal-buttons">
+                <div class="button-row">
+                    <button type="button" class="clear" onclick="calClear()">C</button>
+                    <button type="button" class="back" onclick="calBack()">⌫</button>
+                    <button type="button" onclick="calWrite('.')">.</button>
+                    <button type="button" onclick="calWrite('/')">/</button>
+                </div>
+                <div class="button-row">
+                    <button type="button" onclick="calWrite('1')">1</button>
+                    <button type="button" onclick="calWrite('2')">2</button>
+                    <button type="button" onclick="calWrite('3')">3</button>
+                    <button type="button" onclick="calWrite('*')">x</button>
+                </div>
+                <div class="button-row">
+                    <button type="button" onclick="calWrite('4')">4</button>
+                    <button type="button" onclick="calWrite('5')">5</button>
+                    <button type="button" onclick="calWrite('6')">6</button>
+                    <button type="button" onclick="calWrite('-')">-</button>
+                </div>
+                <div class="button-row">
+                    <button type="button" onclick="calWrite('7')">7</button>
+                    <button type="button" onclick="calWrite('8')">8</button>
+                    <button type="button" onclick="calWrite('9')">9</button>
+                    <button type="button" onclick="calWrite('+')">+</button>
+                </div>
+                <div class="button-row">
+                    <button type="button" onclick="calWrite('0')">0</button>
+                    <button type="button" class="equals" style="flex: 2;" onclick="calEval()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (extra) -->
+    <footer>
+        <p>Desarrollo Web #6469 | Universidad de la Costa</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

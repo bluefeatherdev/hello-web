@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Metadata & links -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid con cal(...) y nth-child(...)| CSS | Unidad 1</title>
+    <!-- CSS -->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: teal;
+        }
+
+        h1 {
+            color: wheat;
+        }
+
+        p {
+            color: white;
+            font-size: 20px;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, calc(33.33vh - 2px));
+            column-gap: 2px;
+            row-gap: 2px;
+            background-color: #0B4B54;
+            border: 2px solid #032A33;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+
+        .grid div:nth-child(3n + 1) {
+            background-color: #24777C;
+        }
+
+        .grid div:nth-child(3n + 1):hover {
+            background-color: #29858a;
+        }
+
+        .grid div:nth-child(3n + 2) {
+            background-color: #82ACAB;
+        }
+
+        .grid div:nth-child(3n + 2):hover {
+            background-color: #95c0c0;
+        }
+
+        .grid div:nth-child(3n + 3) {
+            background-color: #D3E4E7;
+        }
+
+        .grid div:nth-child(3n + 3):hover {
+            background-color: #c7d7da;
+        }
+        
+        .grid-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: white; */
+            color: #032A33;
+            /* border: 1px solid #ddd; */
+            font-size: 23px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<!-- HTML Elements -->
+<body>
+
+    <!-- Ejemplo: Gird con calc(...) y nth-child(...) -->
+    <h1>display: grid; + grid-template-...: repeat(..., calc(...)); + nth-child(...)</h1>
+    <div class="grid">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+
+    <!-- Firma personal -->
+    <p>{"🌿🖥️"};</p>
+ 
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Metadata & links -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribución Grid | CSS | Unidad 1</title>
+    <!-- CSS -->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: teal;
+        }
+
+        h1 {
+            color: wheat;
+        }
+
+        p {
+            color: white;
+            font-size: 20px;
+        }
+        
+        .grid {
+            display: grid;
+            display: -ms-grid;
+            display: -moz-grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr 1.5fr 0.5fr;
+        }
+
+        .img-lateral {
+            background-image: url(demo020.jpg);
+            grid-column: 1;
+            grid-row: 1/4;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img-rectangular {
+            background-image: url(demo020.jpg);
+            grid-column: 2/4;
+            grid-row: 1;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img-central {
+            background-image: url(demo020.jpg);
+            grid-column: 2;
+            grid-row: 2;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .descripcion {
+            grid-column: 3;
+            grid-row: 2/4;
+            text-align: justify;
+            background-color: wheat;
+        }
+
+        .descripcion p {
+            color: #5f2800;
+        }
+
+        .titulo {
+            grid-column: 2;
+            grid-row: 3;
+            text-align: center;
+            background-color: #5f2800;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<!-- HTML Elements -->
+<body>
+
+    <!-- Ejemplo: Distribución Grid -->
+    <h1>Ejemplo de distribución con Grid</h1>
+    <div class="grid">
+        <div class="img-lateral"></div>
+        <div class="img-rectangular"></div>
+        <div class="descripcion">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam at voluptatibus distinctio odit velit molestias autem nisi recusandae quibusdam laudantium quia, sint natus voluptatem quis eligendi reprehenderit! Nobis, eveniet ex.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam at voluptatibus distinctio odit velit molestias autem nisi recusandae quibusdam laudantium quia, sint natus voluptatem quis eligendi reprehenderit! Nobis, eveniet ex.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam at voluptatibus distinctio odit velit molestias autem nisi recusandae quibusdam laudantium quia, sint natus voluptatem quis eligendi reprehenderit! Nobis, eveniet ex.</p>
+        </div>
+        <div class="img-central"></div>
+        <div class="titulo">
+            <h1>Some title</h1>
+        </div>
+    </div>
+
+    <!-- Firma personal -->
+    <p>{"🌿🖥️"};</p>
+ 
+</body>
+</html>

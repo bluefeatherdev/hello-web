@@ -1,0 +1,128 @@
+/* Hoja de estilos CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Cuerpo página */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Texto de bienvenida */
+header {
+    background-color: #ffcb05;
+    color: #2a75bb;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Select */
+section {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+label {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+    color: #2a75bb;
+}
+
+select {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #2a75bb;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #2a75bb;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+select:hover {
+    background-color: #e6f0ff;
+}
+
+select:focus {
+    outline: none;
+    border-color: #ffcb05;
+    box-shadow: 0 0 0 3px rgba(255, 203, 5, 0.3);
+}
+
+/* Contenedor tarjeta */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-container.single {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+/* Tarjeta individual */
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    margin-top: 1rem;
+    object-fit: contain;
+}
+
+.card h2 {
+    color: #2a75bb;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #2a75bb;
+    color: #fff;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-direction: row;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+
+/* Media Queries para Responsividad */
+/* Pantallas pequeñas */
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
+

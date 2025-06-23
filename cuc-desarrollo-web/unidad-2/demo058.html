@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Metadata & links -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuarios | Bootstrap | Unidad 2</title>
+    <!-- CSS -->
+    <style>
+        
+    </style>
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap 5.3.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<!-- HTML Elements -->
+<body>
+    
+    <!-- Bootstrap container -->
+    <div class="container">
+        <div class="card m-5 border-primary shadow-lg">
+            <div class="card-header text-center">Registro de Usuarios</div>
+            <div class="card-body">
+                <div class="card-text">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <!-- User Icon -->
+                            <img class="img-fluid" src="https://static.vecteezy.com/system/resources/previews/009/267/561/original/user-icon-design-free-png.png" alt="user">
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <!-- Inputs -->
+                            <label for="nombre" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" placeholder="Ingrese su Nombre" id="nombre">
+                            <label for="nombre" class="form-label">Apellido:</label>
+                            <input type="text" class="form-control" placeholder="Ingrese su Apellido" id="apellido">
+                            <label for="nombre" class="form-label">Dirección:</label>
+                            <input type="text" class="form-control" placeholder="Ingrese su Direccion" id="direccion">
+                            <!-- Buttons -->
+                            <div class="d-grid gap-2 mt-3">
+                                <button class="btn btn-outline-dark" onclick="addUser()">Registrar</button>
+                                <button class="btn btn-outline-primary" onclick="listUsers()">Listar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Table for displaying registered users -->
+        <div class="row m-5">
+            <table class="table table-dark table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellidos</th>
+                        <th scope="col">Dirección</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="demo058.js"></script>
+
+</body>
+</html>

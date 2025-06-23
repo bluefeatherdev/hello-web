@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Metadata & links -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo en clase | JS | Unidad 2</title>
+    <!-- CSS -->
+    <style>
+        
+    </style>
+</head>
+<!-- HTML Elements -->
+<body>
+
+    <!-- Ejemplo 1: Cambiar conteneido y estilos de elementos HTML -->
+    <h1 id="titulo">Hello World!</h1>
+    <p id="p1"></p>
+    <button onclick="document.getElementById('p1').textContent=Date()">Fecha y Hora</button>
+    <button onclick="document.getElementById('titulo').style.color='teal'">Aplicar estilos</button>
+    <hr>
+
+    <!-- Ejemplo 2: Cambiar atributos de elementos HTML -->
+    <button onclick="document.getElementById('img1').src='./pic_bulbon.gif'">Encender</button>
+    <img src="pic_bulboff.gif" alt="bulb" id="img1">
+    <button onclick="document.getElementById('img1').src='./pic_bulboff.gif'">Apagar</button>
+    
+    <br><br>
+    <button onclick="document.getElementById('img1').style.display='none'">Ocultar</button>
+    <button onclick="mostrar()">Mostrar</button>
+    <button onclick="window.print()">Imprimir</button>
+    <hr>
+
+    <button id="btn1">Click aquí</button>
+
+    <!-- Firma personal -->
+    <p>{"🌿🖥️"};</p>
+
+    <!-- JavaScript -->
+    <script>
+        // Modificar el contenido de un elemento HTML
+        document.getElementById("p1").innerHTML = "¡<i>Contenido</i> generado dinámicamente con <i>JavaScript</i>!";
+        
+        // Imprimir en el documento HTML
+        document.write("<h4>Hello World! - write(...)</h4>");
+
+        // Imprimir en la consola del navegador
+        console.log("Hello World! (Consola)");
+        
+        // Declaración de variables
+        var a = 10;
+        console.log("a:", a);
+
+        // Simular un error
+        console.error("¡Error de prueba!")
+
+        // Alcance de variables
+        let num1 = 20;
+        let num2 = 30;
+        if (true) {
+            let num1 = 64;
+            console.log("num1 (if):", num1);
+            console.log("num2 (if):", num2);
+        }
+        console.log("num1 (global):", num1);
+
+        // Constantes
+        const IVA = 0.19;
+        const PI = 3.1416;
+        const GRAVITY = 9.8;
+        console.log("IVA:", IVA);
+        console.log("PI:", PI);
+        console.log("GRAVITY:", GRAVITY);
+
+        // Comparaciones
+        console.log("1" == 1);  // Comparar valor
+        console.log("1" === 1); // Comparar valor y tipo de dato
+        console.log("1" != 1);  // Comparar valor (si diferente)
+        console.log("1" !== 1); // Comparar valor y tipo de dato (si diferente)
+
+        // Condicionales
+        if (num1 === num2) {
+            console.log(num1, "es igual a", num2);
+        } else {
+            console.log(num1, "es diferente a", num2);
+        }
+
+        // Switch
+        let dia = prompt("Ingrese un número del 1 al 7:");
+        switch (dia) {
+            case "1":
+                console.log("El día es lunes.");
+                break;
+            case "2":
+                console.log("EL día es martes.");
+                break;
+            case "3":
+                console.log("EL día es miércoles.");
+                break;
+            case "4":
+                console.log("EL día es jueves.");
+                break;
+            case "5":
+                console.log("EL día es viernes.");
+                break;
+            case "6":
+                console.log("EL día es sábado.");
+                break;
+            case "7":
+                console.log("EL día es domingo.");
+                break;
+            default:
+                console.error("¡Error! Solo números del 1 al 7...");
+        }
+
+        // Ciclo for
+        for (let i = 0; i < 10; i++) {
+            console.log("(for) Número:", i);
+        }
+
+        // Ciclo while
+        let cont = 0;
+        while (cont < 10) {
+            console.log("(while) Número:", cont);
+            cont++;
+        }
+    </script>
+
+    <!-- JavaScript externo -->
+    <script src="demo028.js"></script>
+ 
+</body>
+</html>
