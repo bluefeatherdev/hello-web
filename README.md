@@ -19,7 +19,7 @@ Este repositorio es mi espacio personal de estudio para **desarrollar habilidade
 ## ¿Qué encontrarás aquí?
  
 - **Pruebas personales**  
-  Código experimental y anotaciones propias.
+  Código experimental y ejemplos basados en la comunidad.
 
 - **Material académico**  
   Ejercicios y proyectos de la Universidad de la Costa CUC.
