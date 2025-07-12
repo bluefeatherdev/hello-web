@@ -1,10 +1,11 @@
 # Hello, Web!
 
-![HTML](https://img.shields.io/badge/HTML-E34F26?logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=black)
-![Node.js](https://img.shields.io/badge/Node.js-339933?logo=Node.js&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?logo=bootstrap&logoColor=white)
+![Static Badge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white&labelColor=101010)
+![Static Badge](https://img.shields.io/badge/CSS3-663399?style=for-the-badge&logo=css&logoColor=white&labelColor=101010)
+![Static Badge](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white&labelColor=101010)
+![Static Badge](https://img.shields.io/badge/Node.js-5FA04E?style=for-the-badge&logo=node.js&logoColor=white&labelColor=101010)
+![Static Badge](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=Bootstrap&logoColor=white&labelColor=101010)
+
 
 Este repositorio es mi espacio personal de estudio para **desarrollar habilidades web**. Incluye:
 
