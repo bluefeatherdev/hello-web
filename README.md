@@ -9,7 +9,7 @@
 
 Este repositorio es mi espacio personal de estudio para **desarrollar habilidades web**. Incluye:
 
-## Estructura del repositorio
+## 🗂️ Estructura del repositorio
 
 - `w3schools-html/`: ejercicios del curso W3Schools HTML de 2025.
 - `w3schools-css/`: ejercicios del curso W3Schools CSS de 2025.
@@ -17,7 +17,7 @@ Este repositorio es mi espacio personal de estudio para **desarrollar habilidade
 - `cuc/`: proyectos y prácticas realizados en la Universidad (CUC).
 - `pruebas/`: pruebas personales basados en ejemplos encontrados en la comunidad.
 
-## ¿Qué encontrarás aquí?
+## 🔎 ¿Qué encontrarás aquí?
  
 - **Pruebas personales**  
   Código experimental y ejemplos basados en la comunidad.
@@ -27,5 +27,10 @@ Este repositorio es mi espacio personal de estudio para **desarrollar habilidade
 
 - **Material de cursos**  
   Scripts y ejemplos de la página de aprendizaje W3schools.
+
+## 🎯 Objetivos del repositorio
+
+- Depositar mis conocimientos de los fundamentos de la web en un mismo lugar
+- Organizar mis experimentos personales y ejercicios académicos
 
 > Hello World! '\u{2665}'
