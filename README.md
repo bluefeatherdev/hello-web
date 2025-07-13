@@ -11,26 +11,26 @@ Este repositorio es mi espacio personal de estudio para **desarrollar habilidade
 
 ## 🗂️ Estructura del repositorio
 
-- `w3schools-html/`: ejercicios del curso W3Schools HTML de 2025.
-- `w3schools-css/`: ejercicios del curso W3Schools CSS de 2025.
-- `w3schools-js/`: ejercicios del curso W3Schools JavaScript de 2025.
-- `cuc/`: proyectos y prácticas realizados en la Universidad (CUC).
-- `pruebas/`: pruebas personales basados en ejemplos encontrados en la comunidad.
+- `w3schools-html/`: ejercicios del curso W3Schools HTML de 2025
+- `w3schools-css/`: ejercicios del curso W3Schools CSS de 2025
+- `w3schools-js/`: ejercicios del curso W3Schools JavaScript de 2025
+- `cuc/`: proyectos y prácticas realizados en la Universidad (CUC)
+- `pruebas/`: pruebas personales basados en ejemplos encontrados en la comunidad
 
 ## 🔎 ¿Qué encontrarás aquí?
  
 - **Pruebas personales**  
-  Código experimental y ejemplos basados en la comunidad.
+  Código experimental y ejemplos basados en la comunidad
 
 - **Material académico**  
-  Ejercicios y proyectos de la Universidad de la Costa CUC.
+  Ejercicios y proyectos de la Universidad de la Costa CUC
 
 - **Material de cursos**  
-  Scripts y ejemplos de la página de aprendizaje W3schools.
+  Scripts y ejemplos de la página de aprendizaje W3schools
 
 ## 🎯 Objetivos del repositorio
 
-- Depositar mis conocimientos de los fundamentos de la web en un mismo lugar
-- Organizar mis experimentos personales y ejercicios académicos
+- Organizar mis conocimientos de los **fundamentos de la web**
+- Compartir mis experimentos personales y ejercicios académicos
 
 > Hello World! '\u{2665}'
