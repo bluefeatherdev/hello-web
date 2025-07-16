@@ -3,19 +3,20 @@
 ![Static Badge](https://img.shields.io/badge/markup-html5-E34F26?style=for-the-badge&logo=html5&logoColor=white&labelColor=101010)
 ![Static Badge](https://img.shields.io/badge/style-css3-663399?style=for-the-badge&logo=css&logoColor=white&labelColor=101010)
 ![Static Badge](https://img.shields.io/badge/language-javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white&labelColor=101010)
+
 ![Static Badge](https://img.shields.io/badge/backend-node.js-5FA04E?style=for-the-badge&logo=node.js&logoColor=white&labelColor=101010)
 ![Static Badge](https://img.shields.io/badge/framework-bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white&labelColor=101010)
 
 
-Este repositorio es mi espacio personal de estudio para **desarrollar habilidades web**. Incluye:
+Este repositorio es mi espacio personal de estudio para **desarrollar habilidades web** y sus fundamentos. Incluye:
 
 ## 🗂️ Estructura del repositorio
 
+- `cuc/`: proyectos y prácticas realizados en la Universidad (CUC)
+- `pruebas/`: pruebas personales basados en ejemplos encontrados en la comunidad
 - `w3schools-html/`: ejercicios del curso W3Schools HTML de 2025
 - `w3schools-css/`: ejercicios del curso W3Schools CSS de 2025
 - `w3schools-js/`: ejercicios del curso W3Schools JavaScript de 2025
-- `cuc/`: proyectos y prácticas realizados en la Universidad (CUC)
-- `pruebas/`: pruebas personales basados en ejemplos encontrados en la comunidad
 
 ## 🔎 ¿Qué encontrarás aquí?
  
@@ -30,7 +31,10 @@ Este repositorio es mi espacio personal de estudio para **desarrollar habilidade
 
 ## 🎯 Objetivos del repositorio
 
-- Organizar mis conocimientos de los **fundamentos de la web**
-- Compartir mis experimentos personales y ejercicios académicos
+- **Sistematizar** mis conocimientos sobre los fundamentos de desarrollo web, incluyendo HTML, CSS, JavaScript y herramientas complementarias
+
+- **Compartir** mis pruebas personales y ejercicios académicos como referencia para otros desarrolladores o estudiantes
+
+- **Documentar** mi proceso de aprendizaje y crecimiento en programación web de manera clara y accesible
 
 > Hello World! '\u{2665}'
