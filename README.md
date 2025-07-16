@@ -21,6 +21,7 @@ Este repositorio es mi espacio personal de estudio para desarrollar habilidades 
 ## 🗂️ Estructura del repositorio
 
 - `cuc/`: proyectos y prácticas realizados en la Universidad (CUC)
+  
 - `pruebas/`: pruebas personales basados en ejemplos encontrados en la comunidad
 - `w3schools-html/`: ejercicios del curso W3Schools HTML de 2025
 - `w3schools-css/`: ejercicios del curso W3Schools CSS de 2025
