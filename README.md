@@ -18,14 +18,6 @@ Este repositorio es mi espacio personal de estudio para desarrollar habilidades 
 
 - **Material de cursos:** Scripts y ejemplos de la página de aprendizaje W3schools
 
-## 🎯 Objetivos del repositorio
-
-- **Sistematizar** mis conocimientos sobre los fundamentos de desarrollo web
-
-- **Compartir** mis pruebas personales y ejercicios académicos como referencia
-
-- **Documentar** mi proceso de aprendizaje en programación web de manera clara y accesible
-
 ## 🗂️ Estructura del repositorio
 
 - `cuc/`: proyectos y prácticas realizados en la Universidad (CUC)
@@ -33,5 +25,13 @@ Este repositorio es mi espacio personal de estudio para desarrollar habilidades 
 - `w3schools-html/`: ejercicios del curso W3Schools HTML de 2025
 - `w3schools-css/`: ejercicios del curso W3Schools CSS de 2025
 - `w3schools-js/`: ejercicios del curso W3Schools JavaScript de 2025
+
+## 🎯 Objetivos del repositorio
+
+- **Sistematizar** mis conocimientos sobre los fundamentos de desarrollo web
+
+- **Compartir** mis pruebas personales y ejercicios académicos como referencia
+
+- **Documentar** mi proceso de aprendizaje en programación web de manera clara y accesible
 
 > Hello World! '\u{2665}'
