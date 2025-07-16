@@ -31,10 +31,10 @@ Este repositorio es mi espacio personal de estudio para desarrollar habilidades 
 
 ## 🎯 Objetivos del repositorio
 
-- **Sistematizar** mis conocimientos sobre los fundamentos de desarrollo web, incluyendo HTML, CSS, JavaScript y herramientas complementarias
+- **Sistematizar** mis conocimientos sobre los fundamentos de desarrollo web
 
-- **Compartir** mis pruebas personales y ejercicios académicos como referencia para otros desarrolladores o estudiantes
+- **Compartir** mis pruebas personales y ejercicios académicos como referencia
 
-- **Documentar** mi proceso de aprendizaje y crecimiento en programación web de manera clara y accesible
+- **Documentar** mi proceso de aprendizaje en programación web de manera clara y accesible
 
 > Hello World! '\u{2665}'
