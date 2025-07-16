@@ -20,14 +20,11 @@ Este repositorio es mi espacio personal de estudio para desarrollar habilidades 
 
 ## 🔎 ¿Qué encontrarás aquí?
  
-- **Pruebas personales**  
-  Código experimental y ejemplos basados en la comunidad
+- **Pruebas personales:** Código experimental y ejemplos basados en la comunidad
 
-- **Material académico**  
-  Ejercicios y proyectos de la Universidad de la Costa CUC
+- **Material académico:** Ejercicios y proyectos de la Universidad de la Costa CUC
 
-- **Material de cursos**  
-  Scripts y ejemplos de la página de aprendizaje W3schools
+- **Material de cursos:** Scripts y ejemplos de la página de aprendizaje W3schools
 
 ## 🎯 Objetivos del repositorio
 
