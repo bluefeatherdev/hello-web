@@ -37,4 +37,4 @@ Este repositorio es mi espacio personal de estudio para desarrollar habilidades 
 
 - **Documentar** mi proceso de aprendizaje en programación web de manera clara y accesible
 
-> Hello World! '\u{2665}'
+> Made with '\u{2665}' (♥)
