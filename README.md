@@ -10,7 +10,7 @@
 
 ![](./images/header.png)
 
-Este repositorio es mi espacio personal de estudio sobre el **desarrollo web** y comprender sus fundamentos, tecnologías y buenas prácticas.
+> Este repositorio es mi espacio personal de estudio sobre el **desarrollo web** y comprender sus fundamentos, tecnologías y buenas prácticas.
 
 ## 🔎 ¿Qué encontrarás aquí?
 
