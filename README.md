@@ -10,31 +10,40 @@
 
 ![](./images/header.png)
 
-Este repositorio es mi espacio personal de estudio para desarrollar habilidades web y comprender a profundidad sus fundamentos, tecnologías y buenas prácticas.
+Este repositorio es mi espacio personal de estudio sobre el **desarrollo web** y comprender sus fundamentos, tecnologías y buenas prácticas.
 
 ## 🔎 ¿Qué encontrarás aquí?
- 
-- **Pruebas personales:** Código experimental y ejemplos basados en la comunidad
 
-- **Material académico:** Ejercicios y proyectos de la Universidad de la Costa CUC
+### 🗂️ Aprendizaje estructurado
 
-- **Material de cursos:** Scripts y ejemplos de la página de aprendizaje W3schools
+- Conocimientos de HTML, etiquetas y maquetados y elementos
 
-## 🗂️ Estructura del repositorio
+- Conocimientos de CSS, estilos
+- Conocimientos de JavaScript
+- Carpeta: [`learning/`](./learning/)
 
-- `cuc/`: proyectos y prácticas realizados en la Universidad (CUC)
-  
-- `pruebas/`: pruebas personales basados en ejemplos encontrados en la comunidad
-- `w3schools-html/`: ejercicios del curso W3Schools HTML de 2025
-- `w3schools-css/`: ejercicios del curso W3Schools CSS de 2025
-- `w3schools-js/`: ejercicios del curso W3Schools JavaScript de 2025
+### 🧪 Pruebas personales
+
+- Experimentos cortos
+
+- Ejemplos divertidos de Internet
+- Carpeta: [`playground/`](./playground/)
+
+### 🎓 Aprendizaje en la universidad
+
+- Ejercicios académicos
+
+- Proyectos realizados
+- Contenido dado en asignaturas sobre la web
+- Carpeta: [`cuc/`](./cuc/)
+
 
 ## 🎯 Objetivos del repositorio
 
 - **Sistematizar** mis conocimientos sobre los fundamentos de desarrollo web
 
-- **Compartir** mis pruebas personales y ejercicios académicos como referencia
-
 - **Documentar** mi proceso de aprendizaje en programación web de manera clara y accesible
+
+- Mantener un repositorio útil como guía de referencia personal
 
 > Made with '\u{2665}' (♥)
