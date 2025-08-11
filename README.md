@@ -38,9 +38,9 @@ Este repositorio es mi espacio personal de estudio sobre el **desarrollo web** y
 
 ## 🎯 Objetivos del repositorio
 
-- Sistematizar mis conocimientos en los fundamentos del desarrollo web 
+- Sistematizar mis conocimientos en los **fundamentos** del desarrollo web 
 
-- Practicar integración de tecnologías frontend y backend  
-- Explorar librerías y frameworks populares
+- Practicar integración de tecnologías **frontend** y **backend**  
+- Explorar librerías y **frameworks** populares
 
 > Made with '\u{2665}' (♥)
