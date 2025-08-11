@@ -16,34 +16,33 @@ Este repositorio es mi espacio personal de estudio sobre el **desarrollo web** y
 
 ### 🗂️ Aprendizaje estructurado
 
-- Conocimientos de HTML, etiquetas y maquetados y elementos
+- Etiquetas, estructura y maquetado
 
-- Conocimientos de CSS, estilos
-- Conocimientos de JavaScript
+- Estilos, diseño responsivo y animaciones
+- Lógica, manipulación del DOM y eventos
 - Carpeta: [`learning/`](./learning/)
 
 ### 🧪 Pruebas personales
 
-- Experimentos cortos
+- Proyectos pequeños y pruebas rápidas
 
-- Ejemplos divertidos de Internet
+- Ejemplos creativos y curiosos encontrados en Internet
 - Carpeta: [`playground/`](./playground/)
 
-### 🎓 Aprendizaje en la universidad
+### 🎓 Uso en la universidad
 
-- Ejercicios académicos
+- Ejercicios académicos sobre desarrollo web
 
-- Proyectos realizados
-- Contenido dado en asignaturas sobre la web
+- Proyectos desarrollados para distintas asignaturas
 - Carpeta: [`cuc/`](./cuc/)
 
 
 ## 🎯 Objetivos del repositorio
 
-- **Sistematizar** mis conocimientos sobre los fundamentos de desarrollo web
+- Sistematizar mis conocimientos en los fundamentos del desarrollo web 
 
-- **Documentar** mi proceso de aprendizaje en programación web de manera clara y accesible
-
+- Practicar integración de tecnologías frontend y backend  
+- Explorar librerías y frameworks populares
 - Mantener un repositorio útil como guía de referencia personal
 
 > Made with '\u{2665}' (♥)
